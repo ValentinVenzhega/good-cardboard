@@ -1,0 +1,425 @@
+@media (max-width: 1200px)
+	.navigation
+		li
+			padding: 5px 10px
+	.main
+		&-img
+			&::after	
+				margin-top: -39px
+				margin-left: 57px
+			&::before
+				width: 340px
+				height: 340px
+				margin-left: 39px
+		  margin-top: 0
+
+
+@media (max-width: 991px)
+	.navigation
+		display: none
+	.header
+		position: relative
+		height: 100%
+		padding: 15px 0
+		&-logo
+				margin-top: 0
+		&-contacts
+			margin-top: 0
+			&__phone
+				&s
+					flex-direction: column
+					margin-right: 0
+				&:first-child
+					border: none
+					padding-right: 10px
+		.menu-link
+			display: block
+	.main
+		text-align: center
+		&-img
+			display: none
+		&-text
+			&__title
+				font-size: 30px
+				line-height: 33px
+			&__subtitle
+				font-size: 25px
+				line-height: 33px
+			&__form
+				width: 100%
+				padding: 24px
+				background-color: transparent
+	.form
+		display: block
+		&-title
+			padding-right: 8px 
+			line-height: 25px
+			&__important
+				margin-top: 5px
+		&__input
+			padding: 21px 70px
+
+
+	.overlay
+		.popup
+			top: 5%
+			&-close
+				right: 8px
+				top: -9px
+
+	.features
+		&-block
+			min-width: 290px
+		.numbers-block
+			display: block
+			margin-bottom: 24px
+			width: 100%
+			&:nth-child(1)
+				padding-right: 0
+			&:nth-child(3)
+				padding-left: 0
+
+	.products
+		&-block__title1
+			min-height: 52px
+		
+	.section-title::after
+		display: none	
+
+	.clients
+		&-block_img
+			filter: none
+	.products-block__title1
+		min-height: 50px
+
+	.production
+		padding-top: 50px
+		padding-bottom: 28px 
+		&-text
+			max-width: none
+			&__title
+				text-align: center
+				margin-left: 0
+				padding-left: 0
+				text-transform: uppercase
+				margin-top: 0
+				width: 100vw
+				margin-left: calc(-50vw + 50%)
+			&__descr p
+				text-align-last: center
+		&-slider_bottom
+			display: none
+
+	.contacts
+		margin-top: 36px
+		&-title
+			display: block
+			margin-bottom: 0 
+		&-block
+			padding-top: 0
+			position: static
+			text-align: center
+			&__img
+				display: none
+			&__text
+				margin-bottom: 14px
+		.map
+			height: 420px
+
+	.button-c
+		margin-left: 0
+
+
+@media (max-width: 767px)
+	.hidden-mobile
+		display: none
+	.button img
+		padding-right: 0
+		padding-bottom: 2px
+		width: 62%
+	.header
+		background-color: #f4f4f4
+		.menu-link
+			top: 21px
+			left: 10px
+
+		&-logo
+			background: $active-color url(../img/logo-mobile.png)
+			width: 35px
+			height: 35px
+			border-radius: 4px
+			margin-left: 27px
+		&-contacts
+			&__phone
+				&s
+				font-size: 17px
+				& p
+					font-family: $rob-b
+			&__button
+				display: inline-block
+			 padding: 0
+			 width: 27px
+			 height: 27px
+
+	.main
+		
+		padding-top: 50px
+		padding-bottom: 112px;
+		&-text
+			&__title
+				font-size: 39px
+				line-height: 42px
+			&__subtitle
+				font-size: 28px
+				line-height: 42px
+				margin-top: 6px
+	.form__input
+	 margin-left: 16px;
+  margin-bottom: 25px;
+	
+	.offer
+		padding-top: 24px
+		padding-bottom: 52px
+		&-title
+			font-size: 20px
+			line-height: 24px
+			&-text
+				display: block
+			&_small
+				font-size: 16px
+				margin-top: 5px
+		&-form
+			&__input
+				margin-top: 17px
+				margin-bottom: 13px
+				margin: auto
+			&__note
+				font-size: 13px
+				font-weight: 300
+				line-height: 30px
+			&__label
+				font-size: 14px
+				line-height: 30px
+			&_button
+				margin-top: 20px
+	
+
+	.overlay
+		.popup
+			width: 95%
+			&-form 
+				padding: 17px 12px
+				&-header-title
+					font-size: 24px
+					span
+						font-size: 24px
+				&__btn
+					margin-top: 15px
+	.features
+		&-blocks
+			justify-content: center
+
+	.products-block
+		&__img
+			margin-bottom: 11px	
+		&__title
+			margin-bottom: 14px
+		&__title1
+			min-height: 0
+			margin-bottom: 14px
+		
+	
+	.feedback 
+		padding-bottom: 40px	
+
+	.slider-arrow1
+		height: 79px
+		top: 140px
+		&_right1
+			right: calc((100% - 275px)/2)
+			background: $active-color url(../img/arrow-right_active.png) center no-repeat
+			&:hover
+				background-color: lighten($active-color,5)
+		&_left1
+			left: calc((100% - 275px)/2)
+			background: $active-color url(../img/arrow-left_active.png) center no-repeat
+			&:hover
+				background-color: lighten($active-color,5)
+
+
+@media (max-width: 576px)
+
+	.header
+		&-logo
+			margin-left: 53px
+		.menu
+
+			width: 100%
+			&-link
+				top: 15px
+		&-contacts
+			&__phone
+				&s
+					flex-direction: column
+				font-size: 14px
+				margin-right: 0
+				&:first-child
+					border: none
+					padding-right: 14px
+	.main
+		background: #373737 url(../img/background1.jpg) 30% 23% no-repeat
+		padding-bottom: 60px
+		&-text
+			padding: 0
+			&__title
+				font-size: 22px
+				color: $active-color
+				line-height: 24px
+			&__subtitle
+				font-size: 18px
+				line-height: 24px
+			&__form
+				background-color: rgba(255, 255, 255, 0)
+				padding: 0
+	.form
+		display: block
+		&-title
+			padding: 0
+			font-size: 15px
+			line-height: 1.3
+			&__important
+				margin-top: 8px
+		&__input
+			display: block
+			text-align: center
+			font-size: 13px
+			margin: auto
+	.button_big
+		margin-top: 13px
+	
+		&-small
+			margin-left: 0
+	.overlay
+		.popup-form 
+			padding: 17px 12px
+			&-header-title
+				font-size: 23px
+				span
+					font-size: 23px
+			&__btn
+				margin-left: 0
+	.features
+		.numbers-block
+			display: block
+	.offer
+		background: grey url(../img/offer/offer-bg.jpg) 21% 27% no-repeat
+		background-size: 674%
+	.clients
+		padding-top: 28px
+		padding-bottom: 28px
+		&-blok_img
+			pointer-events: auto
+		&-title
+			margin-bottom: 17px
+		&-block_box
+			width: 143px
+			height: 87px
+			margin-bottom: 7px
+		& img
+			max-width: 80%
+	.products
+		padding-top: 25px
+		padding-bottom: 25px
+	.production-text
+		&__title
+			font-size: 20px
+		&__descr
+			font-size: 14px
+			font-weight: 300
+			line-height: 18px
+			text-align-last: center	
+
+
+	.production-slider_top
+		overflow-y: visible
+		& img
+			height: 380px
+			object-fit: cover
+	.feedback
+		padding-top: 18px
+		&-title
+			margin-bottom: 15px
+	
+	.footer
+		padding-top: 38px
+		padding-bottom: 40px
+		&-text
+			font-size: 11px
+			font-weight: 300
+			line-height: 17px
+	.contacts
+		.map1
+			padding: 15px
+
+@media (max-width:398px)
+
+	.features
+		padding-top: 24px
+		padding-bottom: 40px
+		&-block
+			margin-bottom: 8px
+		.numbers
+			padding-bottom: 0
+	.products
+		padding-top: 14px
+		padding-bottom: 8px
+		&-title
+			margin-bottom: 10px
+		&-block__button
+			margin-right: 6px
+		&-block__title
+			margin-bottom: 17px
+	.button-o
+		width: 119px
+		height: 45px
+		&-first
+			width: 161px
+			height: 45px
+	.offer-form
+		&__input
+			height: 51px
+		&_button
+			height: 51px
+
+
+	.form
+		&-title
+			margin-bottom: 16px
+			letter-spacing: -0.2px
+		&__input
+			width: 100%
+	.section
+		&-title
+			font-size: 22px
+	.overlay
+		.popup-title
+			font-size: 19px
+		.popup-form
+			&__input
+				width: 90%
+				text-align: center
+				padding: 0
+			&-header-title
+				font-size: 20px
+				span
+					font-size: 20px
+	.contacts-block
+		margin-bottom: 28px
+		padding-bottom: 0
+
+
+	.slider-arrow2 
+	 top: 39%
+
+
+

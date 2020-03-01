@@ -1,0 +1,137 @@
+.header
+	height: 144px
+	&-logo
+		background: url(../img/logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 63px
+		padding: 15px 0
+		margin-left: 30px
+		margin-top: 68px
+
+
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-top: 65px
+		&__phone
+			&s
+				display: flex
+			font-size: 22px
+			font-weight: 500
+			margin-right: 15px
+			color: $text-color-dark
+			font-family: $rob
+			&:first-child
+				border-right: 1px solid #cfcfd0
+				padding-right: 15px
+			& p
+				display: inline-block
+				margin: 0
+.button img
+	padding-right: 8px
+
+.navigation
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	background: #373737
+	z-index: 50
+	box-sizing: inherit
+
+	& a
+		color: rgba(255, 255, 255, 0.9)
+		&:hover
+			cursor: pointer
+			color: $active-color
+
+
+li
+	display: inline
+	font-size: 12px
+	font-weight: 400
+	text-transform: uppercase
+	border-right: 1px dotted #5f5f5f; line-height: 10px
+	padding: 5px 22px
+	&:nth-child(1)
+		padding-left: 0
+	&:nth-child(9)
+		border-right: none
+		padding-right: 0
+.menu
+	&-link
+		z-index: 11
+		display: none
+		width: 50px
+		height: 50px
+		position: fixed
+		top: 29px
+		left: 9px
+		margin-top: -6px
+		background-color: rgba(255, 255, 255, 0.9)
+		border-radius: 50%
+		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+		span, span:before, span:after
+			display: block
+			height: 2px
+			width: 18px
+			position: absolute
+			left: 50%
+			margin-left: -9px
+			top: 50%
+			margin-top: -1px
+			background-color: #333333
+		span:before
+			transition: all 0.2s
+			content: ''
+			margin-top: -6px 
+		span:after
+			transition: all 0.2s
+			content: ''
+			margin-top: 4px
+		&_active span
+			background-color: transparent
+			&:before
+				transform: rotate(45deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-45deg)
+				margin-top: 0
+	opacity: 0.9
+	background-color: $text-color-dark
+	position: fixed
+	width: 60vh
+	height: 100vh
+	z-index: 10
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: -120vw
+	&_active
+		left: 0
+		top: 0
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+		li
+			width: 100vw
+		a
+			display: block
+			width: 100%
+			line-height: 3
+			font-weight: 100
+			color: #ffffff
+			letter-spacing: 4px
+			transition: all 0.2s
+			font-family: "Roboto-Bold", sans-serif;
+			&:hover
+
+				background-color: rgba(255, 255, 255, 0.4)
+				width: 100vw
+				text-decoration: none
+
+
